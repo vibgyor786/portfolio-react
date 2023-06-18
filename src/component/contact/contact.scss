@@ -1,0 +1,118 @@
+.contact {
+  background-color: white; 
+  display: flex;
+
+  @media (max-width: 784px) {
+    flex-direction: column;
+  }
+
+  .left {
+    flex: 1;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    h2 {
+      font-size: 2.5rem;
+
+      @media (max-width: 784px) {
+        font-size: 1.6rem;
+      }
+    }
+
+    form {
+      width: 70%;
+      height: 70%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      @media (max-width: 784px) {
+        width: 90%;
+        height: 90%;
+      }
+
+      input {
+        margin-bottom: 10px;
+        width: 300px;
+        height: 30px;
+        font-size: 0.875rem;
+        border-radius: 10px;
+        border: solid 2px indigo;
+        background-color: indigo;
+        color: white;
+        box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.3);
+
+        &::placeholder {
+          color: white;
+          font-size: 0.875rem;
+          padding-left: 10px;
+        }
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      textarea {
+        margin-bottom: 10px;
+        width: 300px;
+        height: 150px;
+        font-size: 0.875rem;
+        border-radius: 10px;
+        border: solid 2px indigo;
+        background-color: indigo;
+        color: white;
+        box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.3);
+
+        &::placeholder {
+          color: white;
+          font-size: 0.875rem;
+          padding-left: 10px;
+        }
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      button {
+        width: 100px;
+        height: 30px;
+        margin-bottom: 20px;
+        font-size: 1rem;
+        font-weight: 700;
+        color: white;
+        background-color: indigo;
+        border-radius: 10px;
+        box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+        transition: all 1s ease;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+
+        &:focus {
+          outline: none;
+        }        
+      }
+
+      span {
+        color: green;
+      }
+    }
+  }
+}
